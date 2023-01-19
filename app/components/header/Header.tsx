@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Nav from "../nav/Nav";
-import Logo from "../logo/Logo";
+import Logo from "@/app/components/logo/Logo";
 import styles from "./header.module.css";
 import Link from "next/link";
 import SocialIcons from "../social-icons/SocialIcons";
