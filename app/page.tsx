@@ -1,12 +1,9 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import HeroSection from "@/src/sections/HeroSection";
 
 export default function Home() {
     return (
-        <main className=" h-full w-full ">
-            <div className="max-w-7xl mx-auto">
-                <h1 className={`text-red-500 text-4xl`}>Dawid Słowik</h1>
-            </div>
+        <main className="h-full w-full pt-16 lg:pt-20">
+            <HeroSection />
         </main>
     );
 }

@@ -14,7 +14,10 @@ export default function RootLayout({
     return (
         <html lang="pl">
             <head />
-            <body className={`bg-background ${inter.className}`}>
+            <body
+                className={`bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black ${inter.className}`}
+                // className={`bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black ${inter.className}`}
+            >
                 <Header />
                 {children}
                 <Footer />
