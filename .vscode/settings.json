@@ -1,4 +1,17 @@
 {
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.tree.indent": 25,
+    "workbench.colorCustomizations": {
+        "tree.indentGuidesStroke": "#12981295"
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontWeight": "normal",
+    "prettier.tabWidth": 4,
+    "editor.fontFamily": "Menlo,Monaco, 'Courier New', monospace",
+    "editor.fontSize": 12,
+    "editor.cursorBlinking": "expand"
 }
