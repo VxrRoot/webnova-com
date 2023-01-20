@@ -5,14 +5,15 @@ import SvgIconLinkedin from "../icons/SvgIconLinkedin";
 
 interface ISocialIcons {
     smNotHidden?: boolean;
+    styles?: string;
 }
 
-const SocialIcons: FC<ISocialIcons> = ({ smNotHidden }) => {
+const SocialIcons: FC<ISocialIcons> = ({ smNotHidden, styles }) => {
     return (
         <div
             className={`${
                 !smNotHidden && "hidden"
-            } lg:items-center lg:justify-end space-x-4 lg:flex w-full`}
+            } ${styles} lg:items-center lg:justify-end space-x-4 lg:flex w-full`}
         >
             <a
                 href="https://www.facebook.com/"
