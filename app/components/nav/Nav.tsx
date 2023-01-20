@@ -13,10 +13,10 @@ const links = [
 const Nav: FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <nav className="flex justify-end items-center w-full relative lg:justify-center ">
+        <nav className="flex justify-end items-center w-full relative lg:justify-center">
             <div
-                className={`w-full justify-start pt-[20%] flex backdrop-blur-[8px] bg-black/90  transition-opacity duration-500 fixed ${
-                    isOpen ? "top-0 " : "top-[-100vh] "
+                className={`w-full justify-start pt-[20%] flex backdrop-blur-[8px] bg-black transition-opacity duration-500 fixed  ${
+                    isOpen ? "top-0 opacity-100 " : "top-[-100vh] opacity-0"
                 } right-0 left-0 h-screen flex-col lg:opacity-100 lg:space-x-16 items-center space-y-14 lg:flex lg:flex-row lg:h-full lg:relative lg:top-auto lg:left-auto lg:right-auto lg:space-y-0 lg:py-0 lg:bg-inherit lg:justify-center lg:backdrop-filter-none lg:backdrop-blur-none`}
             >
                 {links.map(({ name, href }, idx) => (
