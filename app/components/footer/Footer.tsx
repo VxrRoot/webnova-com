@@ -27,8 +27,19 @@ const Footer: FC = () => {
                         repellat suscipit vero!
                     </p>
                 </div>
-                <div className="flex flex-col md:mx-auto w-full md:items-center md:border-r-2 md:pb-4">
-                    <h3 className={`${styleH3} md:ml-[-32px]`}>Nawigacja</h3>
+                <div className="flex flex-col gap-2 md:mx-auto md:items-end w-full md:border-r-[1px] md:pr-[20%]">
+                    <h3 className={styleH3}>Kontakt</h3>
+                    <p className={styleP}>
+                        <a href="mailto:dawidslowik379@gmail.com">
+                            dawidslowik379@gmail.com
+                        </a>
+                    </p>
+                    <p className={styleP}>
+                        <a href="tel:+48535919939">+48 535 919 939</a>
+                    </p>
+                </div>
+                <div className="flex flex-col md:mx-auto w-full md:items-start md:pb-4 md:pl-[20%]">
+                    <h3 className={`${styleH3}`}>Nawigacja</h3>
                     <nav>
                         <ul className="p-0 m-0">
                             {navItems.map(({ name, href }, idx) => (
@@ -43,17 +54,7 @@ const Footer: FC = () => {
                         </ul>
                     </nav>
                 </div>
-                <div className="flex flex-col gap-2 md:items-end">
-                    <h3 className={styleH3}>Kontakt</h3>
-                    <p className={styleP}>
-                        <a href="mailto:dawidslowik379@gmail.com">
-                            dawidslowik379@gmail.com
-                        </a>
-                    </p>
-                    <p className={styleP}>
-                        <a href="tel:+48535919939">+48 535 919 939</a>
-                    </p>
-                </div>
+
                 <div className="flex flex-col gap-3 pb-4 md:col-span-3 md:flex-row md:justify-between md:items-center border-solid border-t-[1px] pt-5">
                     <p className="text-xs self-center">
                         {" "}
