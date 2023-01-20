@@ -7,7 +7,7 @@ import SocialIcons from "../social-icons/SocialIcons";
 
 const Header: FC = () => {
     return (
-        <header className="w-full fixed flex flex-col top-0 left-0 backdrop-blur-lg px-2 py-4 h-18 lg:px-3 lg:py-5 lg:bg-inherit lg:m-auto lg:h-20 lg:flex-row">
+        <header className="w-full fixed flex flex-col top-0 left-0 backdrop-blur-lg px-2 py-4 h-16 lg:px-3 lg:py-5 lg:bg-inherit lg:m-auto lg:h-20 lg:flex-row">
             <div className="m-auto flex justify-between w-full lg:max-w-7xl">
                 <div
                     className={`w-auto max-h-8 lg:w-56  ${styles.logo_wr} hover:cursor-pointer `}

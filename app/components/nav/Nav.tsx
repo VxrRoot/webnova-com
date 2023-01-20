@@ -14,15 +14,15 @@ const Nav: FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <nav className="flex justify-end items-center w-full relative lg:justify-center ">
-            <div
-                className={`w-screen h-screen top-0 left-0 backdrop-blur-lg  ${
+            {/* <div
+                className={`w-screen h-screen top-0 left-0 backdrop-blur-lg ${
                     isOpen ? "flex" : "hidden"
                 } lg:hidden`}
-            />
+            /> */}
             <div
-                className={`w-full justify-center flex fixed ${
-                    isOpen ? "top-16" : "top-[-600px]"
-                } right-0 left-0 flex-col lg:space-x-16 items-center space-y-14 py-20  lg:flex lg:flex-row lg:h-full lg:relative lg:top-auto lg:left-auto lg:right-auto lg:space-y-0 lg:py-0 `}
+                className={`w-full justify-center flex backdrop-blur-md bg-black/80 fixed ${
+                    isOpen ? "top-0" : "top-[-100vh]"
+                } right-0 left-0 h-screen flex-col lg:space-x-16 items-center space-y-14 lg:flex lg:flex-row lg:h-full lg:relative lg:top-auto lg:left-auto lg:right-auto lg:space-y-0 lg:py-0  lg:bg-inherit`}
             >
                 {links.map(({ name, href }, idx) => (
                     <Link href={href} legacyBehavior key={idx}>
