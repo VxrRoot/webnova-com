@@ -17,7 +17,7 @@ const Nav: FC = () => {
             <div
                 className={`w-full justify-start pt-[20%] flex backdrop-blur-md bg-black/80 fixed ${
                     isOpen ? "top-0" : "top-[-100vh]"
-                } right-0 left-0 h-screen flex-col lg:space-x-16 items-center space-y-14 lg:flex lg:flex-row lg:h-full lg:relative lg:top-auto lg:left-auto lg:right-auto lg:space-y-0 lg:py-0  lg:bg-inherit`}
+                } right-0 left-0 h-screen flex-col lg:space-x-16 items-center space-y-14 lg:flex lg:flex-row lg:h-full lg:relative lg:top-auto lg:left-auto lg:right-auto lg:space-y-0 lg:py-0 lg:bg-inherit lg:justify-center`}
             >
                 {links.map(({ name, href }, idx) => (
                     <Link href={href} legacyBehavior key={idx}>
