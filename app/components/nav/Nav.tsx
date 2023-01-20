@@ -15,9 +15,9 @@ const Nav: FC = () => {
     return (
         <nav className="flex justify-end items-center w-full relative lg:justify-center ">
             <div
-                className={`w-full justify-start pt-[20%] flex backdrop-blur-md bg-black/80 fixed ${
-                    isOpen ? "top-0" : "top-[-100vh]"
-                } right-0 left-0 h-screen flex-col lg:space-x-16 items-center space-y-14 lg:flex lg:flex-row lg:h-full lg:relative lg:top-auto lg:left-auto lg:right-auto lg:space-y-0 lg:py-0 lg:bg-inherit lg:justify-center`}
+                className={`w-full justify-start pt-[20%] flex backdrop-blur-[8px] bg-black/90  transition-opacity duration-500 fixed ${
+                    isOpen ? "top-0 " : "top-[-100vh] "
+                } right-0 left-0 h-screen flex-col lg:opacity-100 lg:space-x-16 items-center space-y-14 lg:flex lg:flex-row lg:h-full lg:relative lg:top-auto lg:left-auto lg:right-auto lg:space-y-0 lg:py-0 lg:bg-inherit lg:justify-center lg:backdrop-filter-none lg:backdrop-blur-none`}
             >
                 {links.map(({ name, href }, idx) => (
                     <Link href={href} legacyBehavior key={idx}>
@@ -32,10 +32,8 @@ const Nav: FC = () => {
             </div>
             <div
                 onClick={() => setIsOpen((prev) => !prev)}
-                className={`${
-                    !isOpen && "space-y-2"
-                } lg:hidden hover:cursor-pointer fixed ${
-                    isOpen && "top-8"
+                className={`lg:hidden hover:cursor-pointer fixed ${
+                    isOpen ? "top-8" : "space-y-2"
                 } right-4 w-6 h-6`}
             >
                 <span
@@ -45,8 +43,8 @@ const Nav: FC = () => {
                 />
                 <span
                     className={`block w-8 h-0.5 bg-slate-100 ${
-                        isOpen && "rotate-45"
-                    } ${isOpen && "-translate-y-0.5"}`}
+                        isOpen && "-translate-y-0.5 rotate-45"
+                    }`}
                 />
                 <span
                     className={`${
