@@ -1,5 +1,10 @@
 .logo_wr svg {
-    fill: #b3001b;
+    fill: white;
     width: 220px;
     height: auto;
+    transition: 150ms;
+}
+
+.logo_wr svg:hover {
+    fill: #b3001b;
 }
