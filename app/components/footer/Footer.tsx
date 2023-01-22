@@ -12,7 +12,7 @@ const navItems = [
 ];
 
 const Footer: FC = () => {
-    const styleH3 = `font-bold text-lg text-2xl my-3 flex relative w-min before:content-"" before:w-2/3 before:h-1 before:bg-detailsRed before:absolute before:bottom-0`;
+    const styleH3 = `font-bold text-2xl my-3 flex relative w-min before:content-"" before:w-2/3 before:h-1 before:bg-detailsRed before:absolute before:bottom-0`;
     const styleP = "hover:cursor-pointer hover:text-detailsRed transition-all";
     return (
         <footer className="bg-backgroundDark">

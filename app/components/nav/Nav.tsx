@@ -4,9 +4,8 @@ import { FC, useState } from "react";
 import SocialIcons from "../social-icons/SocialIcons";
 
 const links = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "Strona Główna", href: "/" },
+    { name: "Kontakt", href: "/kontakt" },
     { name: "Blog", href: "/blog" },
 ];
 
