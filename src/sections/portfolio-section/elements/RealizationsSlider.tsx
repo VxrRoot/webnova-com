@@ -4,107 +4,82 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import "swiper/swiper-bundle.min.css";
+import "../PortfolioSection.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination, EffectCoverflow } from "swiper";
-
+import { Pagination, Autoplay } from "swiper";
+import MikolajulikowskiImg from "../../../assets/mikolajulikowski.jpg";
+import MediumImg from "../../../assets/medium.jpg";
 import React from "react";
-
-SwiperCore.use([Pagination, EffectCoverflow, Swiper]);
+import SingleRealization from "./SingleRealization";
 
 const realizations = [
     {
         title: "mikolajulikowski.pl",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+            "Strona stworzona dla Mikołaja. Celem strony jest zbieranie kontaktów do klientów. Strona została stworzona w oparciu o Next.js. Strona pomaga Mikołajowi zdobywać więcej klientów.",
+        img: MikolajulikowskiImg,
+        altText: "Mikolajulikowski.pl",
     },
     {
-        title: "site2.pl",
+        title: "medium.com",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+        img: MediumImg,
+        altText: "medium.com",
     },
     {
-        title: "site3.pl",
+        title: "facebook.com",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+        img: MikolajulikowskiImg,
+        altText: "Mikolajulikowski.pl",
     },
 ];
 
 const RealizationsSlider = () => {
     return (
-        <div className="flex realative">
+        <div className="flex realative pt-5">
             <Swiper
                 navigation
                 pagination={{ clickable: true }}
                 effect="coverflow"
-                coverflowEffect={{
-                    rotate: 20,
-                    stretch: 0,
-                    depth: 150,
-                    modifier: 1,
-                    slideShadows: false,
-                }}
+                modules={[Pagination, Autoplay]}
+                loop={true}
                 centeredSlides={true}
-                style={{ height: "500px" }}
-                slidesPerView={2}
+                slidesPerView="auto"
+                speed={800}
+                breakpoints={{
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    720: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                }}
                 spaceBetween={30}
-                className="mySwiper w-full h-full"
+                autoplay={{
+                    delay: 5000,
+                    pauseOnMouseEnter: true,
+                    disableOnInteraction: false,
+                }}
+                className="mySwiper"
             >
-                <SwiperSlide
-                    style={{
-                        backgroundImage:
-                            "url(https://swiperjs.com/demos/images/nature-1.jpg)",
-                    }}
-                    className="w-52 h-full"
-                >
-                    Slide 1
-                </SwiperSlide>
-                <SwiperSlide
-                    style={{
-                        backgroundImage:
-                            "url(https://swiperjs.com/demos/images/nature-2.jpg)",
-                    }}
-                    className="w-52 h-full"
-                >
-                    Slide 2
-                </SwiperSlide>
-                <SwiperSlide
-                    style={{
-                        backgroundImage:
-                            "url(https://swiperjs.com/demos/images/nature-3.jpg)",
-                    }}
-                    className="w-52 "
-                >
-                    Slide 3
-                </SwiperSlide>
-
-                <SwiperSlide
-                    style={{
-                        backgroundImage:
-                            "url(https://swiperjs.com/demos/images/nature-1.jpg)",
-                    }}
-                    className="w-52 h-full"
-                >
-                    Slide 4
-                </SwiperSlide>
-                <SwiperSlide
-                    style={{
-                        backgroundImage:
-                            "url(https://swiperjs.com/demos/images/nature-2.jpg)",
-                    }}
-                    className="w-52 h-full"
-                >
-                    Slide 5
-                </SwiperSlide>
-                <SwiperSlide
-                    style={{
-                        backgroundImage:
-                            "url(https://swiperjs.com/demos/images/nature-3.jpg)",
-                    }}
-                    className="w-52 h-full"
-                >
-                    Slide 6
-                </SwiperSlide>
+                {realizations.map(
+                    ({ altText, description, img, title }, index) => (
+                        <SwiperSlide key={index}>
+                            <SingleRealization
+                                altText={altText}
+                                description={description}
+                                img={img}
+                                title={title}
+                            />
+                        </SwiperSlide>
+                    )
+                )}
             </Swiper>
         </div>
     );
