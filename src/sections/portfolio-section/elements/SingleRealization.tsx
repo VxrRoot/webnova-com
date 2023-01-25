@@ -15,7 +15,7 @@ const SingleRealization: FC<ISingleRealization> = ({
     altText,
 }) => {
     return (
-        <div className=" h-full w-full max-w-[400px] rounded-lg m-auto text-black hover:cursor-pointer hover:scale-105 transition-all duration-300">
+        <div className=" h-full w-full max-w-[400px] rounded-lg m-auto text-black hover:cursor-pointer lg:hover:scale-105 transition-all duration-300">
             <div className="rounded-lg">
                 <Image
                     src={img}
