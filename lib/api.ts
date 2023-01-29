@@ -1,7 +1,8 @@
 interface ContactFormData {
     name: string;
-    email: string;
+    mail: string;
     message: string;
+    consent: boolean;
 }
 
 export const sendContactForm = async (data: ContactFormData) => {
