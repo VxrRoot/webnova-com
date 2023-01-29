@@ -5,6 +5,7 @@ import SingleService from "./elements/SingleService";
 import SupportImg from "../../assets/support.jpg";
 import WbCreator from "../../assets/wbcreator.jpg";
 import WbCreate from "../../assets/wbcreate.jpg";
+import GradientBackgroundLayout from "@/src/layouts/GradientBackground";
 
 const services = [
     {
@@ -32,27 +33,22 @@ const services = [
 
 const ServicesSection = () => {
     return (
-        <section
-            className={`min-w-full h-full relative flex items-center justify-center overflow-hidden`}
-        >
-            <div className={styles.gradient} />
-            <div className="z-10 bg-black/50 w-full h-full">
-                <section className="w-full max-w-7xl m-auto my-20 padding-x">
-                    <SectionHeadline text="Co mogę dla Ciebie zrobić?" />
-                    <div className="flex flex-col md:flex-row items-center gap-5 pt-10">
-                        {services.map((service, index) => (
-                            <SingleService
-                                key={index}
-                                title={service.title}
-                                description={service.description}
-                                icon={service.icon}
-                                altText={service.altText}
-                            />
-                        ))}
-                    </div>
-                </section>
-            </div>
-        </section>
+        <GradientBackgroundLayout>
+            <section className="w-full max-w-7xl m-auto my-20 padding-x">
+                <SectionHeadline text="Co mogę dla Ciebie zrobić?" />
+                <div className="flex flex-col md:flex-row items-center gap-5 pt-10">
+                    {services.map((service, index) => (
+                        <SingleService
+                            key={index}
+                            title={service.title}
+                            description={service.description}
+                            icon={service.icon}
+                            altText={service.altText}
+                        />
+                    ))}
+                </div>
+            </section>
+        </GradientBackgroundLayout>
     );
 };
 

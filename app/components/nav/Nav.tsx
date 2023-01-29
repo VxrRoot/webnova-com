@@ -11,6 +11,7 @@ const links = [
 
 const Nav: FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+
     return (
         <nav className="flex justify-end items-center w-full relative lg:justify-center">
             <div
@@ -20,7 +21,10 @@ const Nav: FC = () => {
             >
                 {links.map(({ name, href }, idx) => (
                     <Link href={href} legacyBehavior key={idx}>
-                        <a className="text-gray-400 transition-all hover:text-white">
+                        <a
+                            className="text-gray-400 transition-all hover:text-white"
+                            onClick={() => setIsOpen((prev) => !prev)}
+                        >
                             {name}
                         </a>
                     </Link>
