@@ -10,7 +10,6 @@ const initValues = {
     name: "",
     mail: "",
     consent: false,
-    // phone: "",
     message: "",
 };
 
