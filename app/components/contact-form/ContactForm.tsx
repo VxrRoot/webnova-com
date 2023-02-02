@@ -67,6 +67,8 @@ const ContactForm: FC = () => {
         e.preventDefault();
         setFormState((prev) => ({ ...prev, isLoading: true }));
         try {
+            console.log(values);
+
             const response = await sendContactForm(values);
 
             if (response.status === 400) {

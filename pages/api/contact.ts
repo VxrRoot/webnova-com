@@ -48,6 +48,4 @@ export default async function handler(
             res.status(500).json({ status: 500, message: error.message });
         }
     }
-
-    res.status(200).json({ message: "Message sent successfully!" });
 }
