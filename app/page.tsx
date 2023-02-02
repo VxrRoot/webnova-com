@@ -13,7 +13,7 @@ export default function Home() {
             <PortfolioSection />
             <div className="bg-black mx-auto">
                 <GradientBackgroundLayout>
-                    <div className="pt-16 min-h-screen items-center mx-auto max-w-7xl">
+                    <div className="pt-16 min-h-screen items-center mx-auto max-w-7xl padding-x">
                         <SectionHeadline text="Skontaktuj się ze mną" />
                         <ContactSection />
                     </div>

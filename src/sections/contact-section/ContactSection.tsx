@@ -1,5 +1,5 @@
 import { FC } from "react";
-import ContactImg from "../../assets/contactImg.png";
+import contactForm from "../../assets/contactForm2.svg";
 import Image from "next/image";
 import ContactForm from "@/app/components/contact-form/ContactForm";
 
@@ -10,7 +10,7 @@ interface IContactSection {
 const ContactSection: FC<IContactSection> = ({ padding }) => {
     return (
         <section
-            className={`flex flex-col items-center lg:flex-row w-full gap-10 mt-8 ${
+            className={`flex flex-col items-center lg:flex-row w-full gap-10 my-8 ${
                 padding && "lg:p-11"
             }`}
         >
@@ -19,7 +19,7 @@ const ContactSection: FC<IContactSection> = ({ padding }) => {
             </section>
             <section className="flex-1">
                 <Image
-                    src={ContactImg}
+                    src={contactForm}
                     alt="Contact image"
                     priority={true}
                     className="w-full h-auto"

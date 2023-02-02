@@ -67,8 +67,6 @@ const ContactForm: FC = () => {
         e.preventDefault();
         setFormState((prev) => ({ ...prev, isLoading: true }));
         try {
-            console.log(values);
-
             const response = await sendContactForm(values);
 
             if (response.status === 400) {
@@ -86,7 +84,7 @@ const ContactForm: FC = () => {
     };
 
     return (
-        <section className="padding-x max-w-7xl mx-auto w-full">
+        <section className="max-w-7xl mx-auto w-full">
             <form onSubmit={handleSubmit}>
                 <div className="flex flex-col gap-5">
                     <Input
@@ -126,7 +124,7 @@ const ContactForm: FC = () => {
                         onChange={handleChange}
                         value={values.consent}
                     />
-                    <div className="w-40 mt-4">
+                    <div className="w-40 mt-4 mx-auto lg:mx-0">
                         <Button
                             name="Wyślij"
                             type="submit"
