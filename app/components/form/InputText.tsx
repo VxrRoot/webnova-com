@@ -1,5 +1,6 @@
-import React, { FC, useEffect } from "react";
+import React, { FC } from "react";
 import UseValidation from "@/src/hooks/UseValidation";
+import styles from "./InputText.module.css";
 
 interface IInput {
     name: string;
@@ -29,7 +30,11 @@ const Input: FC<IInput> = ({
     const validateError = touched && validation?.status === 400;
 
     return (
-        <div className="flex flex-col">
+        <div
+            className={`flex flex-col ${
+                validateError ? styles.error : styles.success
+            }`}
+        >
             <label className="pl-2 text-sm">{label}</label>
             <input
                 name={name}
@@ -40,9 +45,7 @@ const Input: FC<IInput> = ({
                 placeholder={placeholder}
                 className={`rounded-lg ${
                     validateError ? "border-red-700" : "border-gray-500"
-                } bg-black p-2 border-[1px] focus:${
-                    validateError ? "border-red-700" : "border-green-500"
-                } outline-none focus:shadow-[0px_0px_0px_3px_rgba(0,255,0,0.5))]`}
+                } bg-black p-2 border-[1px] outline-none focus:shadow-[0px_0px_0px_3px_rgba(0,255,0,0.5))]`}
             />
             <span className="h-3 text-red-700 pl-2 text-sm">
                 {touched && validation?.message}

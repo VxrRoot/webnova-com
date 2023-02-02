@@ -83,7 +83,6 @@ const ContactForm: FC = () => {
         }
         setFormState((prev) => ({ ...prev, isLoading: false }));
     };
-    console.log(values);
 
     return (
         <section className="padding-x max-w-7xl mx-auto w-full">
