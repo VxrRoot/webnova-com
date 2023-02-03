@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
-import PersonImg from "../../assets/dawid-hr.png";
+import PersonImg from "public/images/dawid-hr.png";
 import Button from "@/app/components/buttons/animated-button/AnimatedButton";
 import style from "./HeroSection.module.css";
 

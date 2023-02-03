@@ -2,9 +2,9 @@ import SectionHeadline from "@/app/components/headlines/SectionHeadline";
 import React from "react";
 import styles from "./ServicesSection.module.css";
 import SingleService from "./elements/SingleService";
-import SupportImg from "../../assets/support.jpg";
-import WbCreator from "../../assets/wbcreator.jpg";
-import WbCreate from "../../assets/wbcreate.jpg";
+import SupportImg from "public/images/support.jpg";
+import WbCreator from "public/images/wbcreator.jpg";
+import WbCreate from "public/images/wbcreate.jpg";
 import GradientBackgroundLayout from "@/src/layouts/GradientBackground";
 
 const services = [

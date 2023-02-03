@@ -243,6 +243,7 @@
 :root {
     --colorDetailsRed: #b3001b;
     --colorDetailsBlue: #255c99;
+    scroll-behavior: smooth;
 }
 
 * {

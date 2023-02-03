@@ -1,5 +1,5 @@
 import { FC } from "react";
-import contactForm from "../../assets/contactForm2.svg";
+import contactForm from "public/images/contactForm2.svg";
 import Image from "next/image";
 import ContactForm from "@/app/components/contact-form/ContactForm";
 

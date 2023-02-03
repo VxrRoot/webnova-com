@@ -20,7 +20,7 @@ const Nav: FC = () => {
                 } right-0 left-0 h-screen flex-col lg:opacity-100 lg:space-x-16 items-center space-y-14 lg:flex lg:flex-row lg:h-full lg:relative lg:top-auto lg:left-auto lg:right-auto lg:space-y-0 lg:py-0 lg:bg-inherit lg:justify-center lg:backdrop-filter-none lg:backdrop-blur-none`}
             >
                 {links.map(({ name, href }, idx) => (
-                    <Link href={href} legacyBehavior key={idx}>
+                    <Link href={href} legacyBehavior key={idx} scroll={true}>
                         <a
                             className="text-gray-400 transition-all hover:text-white"
                             onClick={() => setIsOpen((prev) => !prev)}
@@ -29,7 +29,7 @@ const Nav: FC = () => {
                         </a>
                     </Link>
                 ))}
-                <div className={`w-6 lg:hidden`}>
+                <div className={`w-[220px] lg:hidden`}>
                     <SocialIcons smNotHidden={true} />
                 </div>
             </div>

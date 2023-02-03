@@ -8,8 +8,8 @@ import "../PortfolioSection.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
-import MikolajulikowskiImg from "../../../assets/mikolajulikowski.jpg";
-import MediumImg from "../../../assets/medium.jpg";
+import MikolajulikowskiImg from "public/images/mikolajulikowski.jpg";
+import MediumImg from "public/images/medium.jpg";
 import React from "react";
 import SingleRealization from "./SingleRealization";
 
