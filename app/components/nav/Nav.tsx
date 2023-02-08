@@ -29,7 +29,7 @@ const Nav: FC = () => {
                         </a>
                     </Link>
                 ))}
-                <div className={`w-[220px] lg:hidden`}>
+                <div className={`w-6 lg:hidden`}>
                     <SocialIcons smNotHidden={true} />
                 </div>
             </div>
