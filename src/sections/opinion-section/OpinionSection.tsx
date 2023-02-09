@@ -1,18 +1,18 @@
 import SectionHeadline from "@/app/components/headlines/SectionHeadline";
 import { FC } from "react";
-import RealizationsSlider from "./elements/RealizationsSlider";
+import OpinionSlider from "./elements/OpinionSlider";
 
 interface IPortfolioSection {}
 
-const PortfolioSection: FC<IPortfolioSection> = () => {
+const OpinionSection: FC<IPortfolioSection> = () => {
     return (
         <div className="padding-x bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
             <section className="max-w-7xl w-full m-auto py-20 ">
-                <SectionHeadline text="Sprawdź moje realizacje" />
-                <RealizationsSlider />
+                <SectionHeadline text="Zobacz co mówią o mnie inni" />
+                <OpinionSlider />
             </section>
         </div>
     );
 };
 
-export default PortfolioSection;
+export default OpinionSection;
