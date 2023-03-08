@@ -35,7 +35,7 @@ const opinions = [
 
 const OpinionSlider = () => {
     return (
-        <div className="flex realative pt-5">
+        <div className="flex relative pt-5 ">
             <Swiper
                 navigation
                 pagination={{ clickable: true }}

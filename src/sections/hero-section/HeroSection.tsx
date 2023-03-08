@@ -10,7 +10,7 @@ const HeroSection: FC = () => {
             <div className="max-w-7xl w-full flex flex-col mx-auto md:flex-row gap-10 ">
                 <section className="flex flex-col w-full max-w-lg lg:max-w-2xl gap-4">
                     <h1
-                        className={`font-bold leading-relaxed text-4xl lg:text-5xl  `}
+                        className={`font-bold leading-tight lg:leading-tight text-4xl lg:text-5xl  `}
                     >
                         Cześć, <br />
                         Jestem Dawid. <br />

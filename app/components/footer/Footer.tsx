@@ -7,7 +7,7 @@ const navItems = [
     { name: "Blog", href: "/blog" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
-    { name: "Polityka prywatności", href: "/polityka-prywatności" },
+    { name: "Polityka prywatności", href: "/polityka-prywatnosci" },
     { name: "Regulamin", href: "/regulamin" },
 ];
 
