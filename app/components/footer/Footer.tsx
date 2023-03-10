@@ -20,11 +20,11 @@ const Footer: FC = () => {
                 <div className="">
                     <h3 className={`${styleH3} `}>About</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Deleniti quaerat sapiente voluptates eaque quo impedit
-                        nam! Inventore, exercitationem, illum quod soluta
-                        corporis temporibus iste quibusdam numquam laborum
-                        repellat suscipit vero!
+                        Loremm ipsum dolor sit amet consectetur adipisicing
+                        elit. Deleniti quaerat sapiente voluptates eaque quo
+                        impedit nam! Inventore, exercitationem, illum quod
+                        soluta corporis temporibus iste quibusdam numquam
+                        laborum repellat suscipit vero!
                     </p>
                 </div>
                 <div className="flex flex-col gap-2 md:mx-auto md:items-end w-full md:border-r-[1px] md:pr-[20%]">
