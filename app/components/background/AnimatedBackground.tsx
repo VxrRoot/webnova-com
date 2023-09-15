@@ -4,7 +4,7 @@ const AnimatedBackground: FC = () => {
     return (
         <div id="bg-wrap" className="absolute top-0  left-0 w-full h-full">
             <div className="w-full h-full absolute bg-black/70" />
-            <svg viewBox="100 0 200 200" preserveAspectRatio="xMidYMid slice">
+            <svg viewBox="70 0 200 200" preserveAspectRatio="xMidYMid slice">
                 <defs>
                     <radialGradient
                         id="Gradient1"
