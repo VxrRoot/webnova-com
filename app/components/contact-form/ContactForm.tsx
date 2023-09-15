@@ -113,7 +113,7 @@ const ContactForm: FC = () => {
                         onBlur={handleBlur}
                         onChange={handleChange}
                         label="Wiadomość"
-                        placeholder="Co mogę dla Ciebie zrobić?"
+                        placeholder="Jaki projekt wspólnie stworzymy?"
                         touched={touched.message}
                     />
                     <InputCheckbox

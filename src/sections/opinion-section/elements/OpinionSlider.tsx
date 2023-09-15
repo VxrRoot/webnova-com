@@ -17,9 +17,9 @@ const opinions = [
         opinion: `,,Chciałbym bardzo podziękować Dawidowi za zakodowanie mojej strony internetowej. Współpraca przebiegała gładko, Dawid jasno opisał co ode mnie potrzebuje oraz gdy strona była już gotowa przeszkolił mnie z jej obsługi w panelu administratora. Terminowość oraz profesjonalna komunikacja sprawia, że z miłą chęcią będę zlecał kolejne projekty Dawidowi. Polecam!!!"`,
     },
     {
-        author: "Mikołaj Ulikowski",
+        author: "Kamil Błasik",
         opinion:
-            "Chciałbym bardzo podziękować Dawidowi za zakodowanie mojej strony internetowej. Współpraca przebiegała gładko, Dawid jasno opisał co ode mnie potrzebuje oraz gdy strona była już gotowa przeszkolił mnie z jej obsługi w panelu administratora. Terminowość oraz profesjonalna komunikacja sprawia, że z miłą chęcią będę zlecał kolejne projekty Dawidowi. Polecam!!!",
+            "Świetna współpraca! Merytoryczna i profesjonalny kontakt, wszystko bez uwag i problemów. Na pewno będzie to współpraca na dłużej i przy kolejnych projektach! Otrzymałem świetnie konwertująca stronę, która na siebie zarabia",
     },
     {
         author: "Mikołaj Ulikowski",

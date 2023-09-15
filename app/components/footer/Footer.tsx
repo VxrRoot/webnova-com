@@ -7,8 +7,8 @@ const navItems = [
     { name: "Blog", href: "/blog" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
-    { name: "Polityka prywatności", href: "/polityka-prywatnosci" },
-    { name: "Regulamin", href: "/regulamin" },
+    { name: "Polityka prywatności", href: "/privacy-policy" },
+    { name: "Regulamin", href: "/terms-and-conditions" },
 ];
 
 const Footer: FC = () => {
@@ -18,13 +18,15 @@ const Footer: FC = () => {
         <footer className="bg-backgroundDark">
             <div className="max-w-7xl gap-5 padding-x m-auto grid grid-cols-1 grid-rows-[auto] md:grid-cols-3 md:grid-rows-[1fr_60px] md:gap-0">
                 <div className="">
-                    <h3 className={`${styleH3} `}>About</h3>
+                    <h3 className={`${styleH3} whitespace-nowrap`}>O nas</h3>
                     <p>
-                        Loremm ipsum dolor sit amet consectetur adipisicing
-                        elit. Deleniti quaerat sapiente voluptates eaque quo
-                        impedit nam! Inventore, exercitationem, illum quod
-                        soluta corporis temporibus iste quibusdam numquam
-                        laborum repellat suscipit vero!
+                        W Webnova wierzymy w moc kreatywności, innowacji i
+                        nieograniczonego potencjału, jaki tkwi w sieci. Jesteśmy
+                        zespołem pasjonatów, gotowych pomóc Ci w osiągnięciu
+                        sukcesu online. Nasze strony internetowe to nie tylko
+                        kod i design, to twoja wizja przekształcona w
+                        rzeczywistość. Dołącz do nas w podróży ku digitalnemu
+                        sukcesowi!
                     </p>
                 </div>
                 <div className="flex flex-col gap-2 md:mx-auto md:items-end w-full md:border-r-[1px] md:pr-[20%]">
@@ -58,7 +60,7 @@ const Footer: FC = () => {
                 <div className="flex flex-col gap-3 pb-4 md:col-span-3 md:flex-row md:justify-between md:items-center border-solid border-t-[1px] pt-5">
                     <p className="text-xs self-center">
                         {" "}
-                        &#169; 2023. Wszelkie prawa zastrzeżone dawidslowik.pl
+                        &#169; 2023. Wszelkie prawa zastrzeżone webnova.com
                     </p>
                     <div className="flex w-2/4 items-center m-auto md:m-0">
                         <SocialIcons smNotHidden styles="flex justify-center" />

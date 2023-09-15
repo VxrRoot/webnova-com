@@ -15,7 +15,7 @@ const SingleService: FC<ISingleService> = ({
     altText,
 }) => {
     return (
-        <div className="flex gap-5 flex-col items-center min-h-[500px] bg-backgroundDark/50 rounded-xl p-4 hover:scale-95 transition-all duration-300 hover:cursor-pointer">
+        <div className="flex flex-grow-0 gap-5 flex-col items-center min-h-[500px] bg-backgroundDark/50 rounded-xl p-4 hover:scale-95 transition-all duration-300 hover:cursor-pointer">
             <Image
                 src={icon}
                 alt={altText}
@@ -23,7 +23,7 @@ const SingleService: FC<ISingleService> = ({
                 className="rounded-full w-40 h-40 object-cover bg-cover"
             />
             <p className="text-2xl font-bold">{title}</p>
-            <p className="">{description}</p>
+            <p className="text-center">{description}</p>
         </div>
     );
 };

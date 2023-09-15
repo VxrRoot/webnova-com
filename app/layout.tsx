@@ -18,6 +18,9 @@ export default function RootLayout({
                 // className={`bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black ${inter.className} text-white`}
                 className={`bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black ${inter.className}`}
             >
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
                 <Header />
                 {children}
                 <Footer />
