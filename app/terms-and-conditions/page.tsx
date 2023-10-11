@@ -1,9 +1,16 @@
+import { Metadata } from "next";
 import { FC } from "react";
+
+export const metadata: Metadata = {
+    title: "Webnova - regulamin",
+    description:
+        "Tworzymy dedykowane strony internetowe, które pomagają naszym klientom maksymalizować zyski oraz realizować cele w ich biznesach",
+};
 
 const page: FC = () => {
     const headLineStyle = "text-center font-bold mt-16 mb-4 text-lg";
     return (
-        <main className="min-h-screen pt-32 max-w-7xl mx-auto">
+        <main className="min-h-screen pt-32 max-w-7xl mx-auto px-8">
             <h1 className="text-center text-4xl font-bold">Regulamin</h1>
             <section className="pb-16">
                 <h2 className={headLineStyle}>

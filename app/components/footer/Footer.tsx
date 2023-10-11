@@ -32,8 +32,8 @@ const Footer: FC = () => {
                 <div className="flex flex-col gap-2 md:mx-auto md:items-end w-full md:border-r-[1px] md:pr-[20%]">
                     <h3 className={styleH3}>Kontakt</h3>
                     <p className={styleP}>
-                        <a href="mailto:dawidslowik379@gmail.com">
-                            dawidslowik379@gmail.com
+                        <a href="mailto:office.webnova@gmail.com">
+                            office.webnova@gmail.com
                         </a>
                     </p>
                     <p className={styleP}>
