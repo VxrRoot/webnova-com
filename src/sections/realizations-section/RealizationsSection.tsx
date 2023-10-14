@@ -17,7 +17,7 @@ const realizations = [
   {
     title: "tattooflow.pl",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.",
+      "Strona internetowa stworzona dla agencji marketingowej tworzącej usługi dla studiów tatuaży. Dzięki naszej współpracy właściciele agencji mogą przedstawić swoją ofertę w internecie oraz zbierają kontakty do potencjalnych klientów",
     img: TattooflowImg,
     altText: "medium.com",
     link: "https://tattooflow.pl/",
