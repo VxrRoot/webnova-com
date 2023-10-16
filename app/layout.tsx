@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicons/favicon.ico",
   },
+  verification: {
+    google: "",
+  },
   keywords: [
     "Tworzenie stron internetowych",
     "strony internetowe",
@@ -31,6 +34,10 @@ export const metadata: Metadata = {
     "Strony internetowe dla restauracji",
     "Strony internetowe dla agencji reklamowych",
   ],
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     locale: "pl_PL",
     url: "https://www.web-nova.pl/",
