@@ -20,6 +20,7 @@ const SocialIcons: FC<ISocialIcons> = ({ smNotHidden, styles }) => {
         target="_blank"
         className="w-6 fill-w hover:cursor-pointer hover:fill-detailsRed"
         rel="nopener noreferrer"
+        aria-label="Facebook"
       >
         <SvgIconFacebook styles="fill-white w-full h-auto hover:hover:fill-detailsRed transition-all" />
       </a>
@@ -29,6 +30,7 @@ const SocialIcons: FC<ISocialIcons> = ({ smNotHidden, styles }) => {
         target="_blank"
         className="w-6 fill-w hover:cursor-pointer hover:fill-detailsRed"
         rel="nopener noreferrer"
+        aria-label="Instagram"
       >
         <SvgIconInstagram styles="fill-white w-full h-auto hover:hover:fill-detailsRed transition-all" />
       </a>
@@ -37,6 +39,7 @@ const SocialIcons: FC<ISocialIcons> = ({ smNotHidden, styles }) => {
         target="_blank"
         className="w-6 fill-w hover:cursor-pointer hover:fill-detailsRed"
         rel="nopener noreferrer"
+        aria-label="Linkedin"
       >
         <SvgIconLinkedin styles="fill-white w-full h-auto hover:hover:fill-detailsRed transition-all" />
       </a>

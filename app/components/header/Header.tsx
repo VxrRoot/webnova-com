@@ -12,7 +12,7 @@ const Header: FC = () => {
         <div
           className={`w-auto max-h-8 lg:w-56 ${styles.logo_wr} hover:cursor-pointer `}
         >
-          <Link href="/">
+          <Link href="/" aria-label="WebNova">
             <Logo />
           </Link>
         </div>
