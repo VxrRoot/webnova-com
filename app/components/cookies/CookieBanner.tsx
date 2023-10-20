@@ -32,7 +32,7 @@ export default function CookieBanner() {
                         backdrop-blur-lg bg-black/50 rounded-lg shadow`}
     >
       <div className="text-center">
-        <Link href="/cookies">
+        <Link href="/privacy-policy">
           <p className="text-xs">
             Ta strona korzysta z{" "}
             <span className="font-bold text-amber-700">ciasteczek</span>
