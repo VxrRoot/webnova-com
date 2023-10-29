@@ -4,6 +4,8 @@ import { Inter } from "@next/font/google";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import { Metadata } from "next";
+import GoogleAnalytics from "./components/GA/GoogleAnalitics";
+import CookieBanner from "./components/cookies/CookieBanner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,7 +56,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl">
-      <head />
+      <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID!} />
       <body
         className={`bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black ${inter.className}`}
       >
@@ -63,6 +65,7 @@ export default function RootLayout({
         <div id="stars3"></div>
         <Header />
         {children}
+        <CookieBanner />
         <Footer />
       </body>
     </html>
