@@ -4,8 +4,19 @@ import { Inter } from "@next/font/google";
 import Header from "../src/components/header/Header";
 import Footer from "../src/components/footer/Footer";
 import { Metadata } from "next";
-import GoogleAnalytics from "../src/components/GA/GoogleAnalitics";
-import CookieBanner from "../src/components/cookies/CookieBanner";
+import dynamic from "next/dynamic";
+
+const CookieBanner = dynamic(
+    () => import("../src/components/cookies/CookieBanner"),
+    { ssr: false }
+);
+
+const GoogleAnalytics = dynamic(
+    () => import("../src/components/GA/GoogleAnalitics"),
+    {
+        ssr: false,
+    }
+);
 
 const inter = Inter({ subsets: ["latin"] });
 
