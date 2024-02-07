@@ -241,42 +241,42 @@
 } */
 
 :root {
-  --colorDetailsRed: #b3001b;
-  --colorDetailsBlue: #255c99;
-  scroll-behavior: smooth !important;
+    --colorDetailsRed: #b3001b;
+    --colorDetailsBlue: #255c99;
+    scroll-behavior: smooth !important;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html,
 body {
-  max-width: 100vw;
-  height: 100%;
-  overflow-x: hidden;
-  color: white;
-  scroll-behavior: smooth !important;
+    max-width: 100vw;
+    /* height: 100%; */
+    overflow-x: hidden;
+    color: white;
+    scroll-behavior: smooth !important;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+    html {
+        color-scheme: dark;
+    }
 }
 
 .padding-x {
-  @apply px-4;
+    @apply px-4;
 }
 
 @media (min-width: 1024px) {
-  .padding-x {
-    @apply px-3;
-  }
+    .padding-x {
+        @apply px-3;
+    }
 }

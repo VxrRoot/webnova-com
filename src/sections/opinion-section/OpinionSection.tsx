@@ -1,4 +1,4 @@
-import SectionHeadline from "@/app/components/headlines/SectionHeadline";
+import SectionHeadline from "@/src/components/headlines/SectionHeadline";
 import { FC } from "react";
 import OpinionSlider from "./elements/OpinionSlider";
 

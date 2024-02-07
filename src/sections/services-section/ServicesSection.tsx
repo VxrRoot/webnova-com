@@ -1,4 +1,4 @@
-import SectionHeadline from "@/app/components/headlines/SectionHeadline";
+import SectionHeadline from "@/src/components/headlines/SectionHeadline";
 import React from "react";
 import styles from "./ServicesSection.module.css";
 import SingleService from "./elements/SingleService";

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import contactForm from "public/images/contactForm2.svg";
 import Image from "next/image";
-import ContactForm from "@/app/components/contact-form/ContactForm";
+import ContactForm from "@/src/components/contact-form/ContactForm";
 
 interface IContactSection {
     padding?: boolean;

@@ -3,7 +3,7 @@ import Image from "next/image";
 import PersonImg from "public/images/hero-img.png";
 import style from "./HeroSection.module.css";
 import ButtonCTA from "./ButtonCTA";
-import AnimatedBackground from "@/app/components/background/AnimatedBackground";
+import AnimatedBackground from "@/src/components/background/AnimatedBackground";
 
 const HeroSection: FC = () => {
     return (
