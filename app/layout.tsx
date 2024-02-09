@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 
 import Header from "../src/components/header/Header";
 import Footer from "../src/components/footer/Footer";
@@ -28,6 +28,11 @@ export const metadata: Metadata = {
         google: "",
     },
     keywords: [
+        "Web nowa",
+        "Nowa web",
+        "Nova web",
+        "Web nova",
+        "web nova strony internetowe",
         "Tworzenie stron internetowych",
         "strony internetowe",
         "webflow",

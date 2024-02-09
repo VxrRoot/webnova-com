@@ -1,8 +1,8 @@
 import { FC } from "react";
 import MikolajulikowskiImg from "public/images/mikolajulikowski.jpg";
 import TattooflowImg from "public/images/tattooflow.png";
-import MediumImg from "public/images/medium.jpg";
 import SectionHeadline from "@/src/components/headlines/SectionHeadline";
+import HarmoniaImg from "public/images/harmoniaconsult.jpg";
 import SingleRealization from "./elements/SingleRealization";
 
 const realizations = [
@@ -11,7 +11,7 @@ const realizations = [
         description:
             "Strona stworzona dla Mikołaja. Celem strony jest zbieranie kontaktów do klientów. Strona została stworzona w oparciu o Next.js. Strona pomaga Mikołajowi zdobywać więcej klientów.",
         img: MikolajulikowskiImg,
-        altText: "Mikolajulikowski.pl",
+        altText: "mikolajulikowski.pl",
         link: "https://www.mikolajulikowski.pl/",
     },
     {
@@ -19,8 +19,16 @@ const realizations = [
         description:
             "Strona internetowa stworzona dla agencji marketingowej tworzącej usługi dla studiów tatuaży. Dzięki naszej współpracy właściciele agencji mogą przedstawić swoją ofertę w internecie oraz zbierają kontakty do potencjalnych klientów",
         img: TattooflowImg,
-        altText: "medium.com",
+        altText: "tattooflow.com",
         link: "https://tattooflow.pl/",
+    },
+    {
+        title: "harmoniaconsult.pl",
+        description:
+            "Strona harmoniaconsult.pl to klucz do zbierania kontaktów i dzielenia się wiedzą przez blog. Intuicyjna, z łatwym dostępem do formularza, buduje zaufanie, podkreślając profesjonalizm",
+        img: HarmoniaImg,
+        altText: "harmoniaconsult.pl",
+        link: "https://www.harmoniaconsult.pl/",
     },
 ];
 
