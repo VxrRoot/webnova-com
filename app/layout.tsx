@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import CookieBanner from "@/src/components/cookies/CookieBanner";
 import GoogleAnalytics from "@/src/components/GA/GoogleAnalitics";
+import { Suspense } from "react";
 
 // const CookieBanner = dynamic(
 //     () => import("../src/components/cookies/CookieBanner"),
@@ -73,9 +74,11 @@ export default function RootLayout({
 }) {
     return (
         <html lang="pl">
-            <GoogleAnalytics
-                GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID!}
-            />
+            <Suspense>
+                <GoogleAnalytics
+                    GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID!}
+                />
+            </Suspense>
             <body
                 className={`bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black ${inter.className}`}
             >
@@ -84,7 +87,9 @@ export default function RootLayout({
                 <div id="stars3"></div>
                 <Header />
                 {children}
-                <CookieBanner />
+                <Suspense>
+                    <CookieBanner />
+                </Suspense>
                 <Footer />
             </body>
         </html>
