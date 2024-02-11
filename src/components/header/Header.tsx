@@ -17,7 +17,7 @@ const Header: FC = () => {
                     </Link>
                 </div>
                 <Nav />
-                <div className="flex items-center">
+                <div className="flex items-center w-[220px]">
                     <SocialIcons styles="w-[220px]" />
                 </div>
             </div>

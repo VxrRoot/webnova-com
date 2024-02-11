@@ -5,18 +5,20 @@ import Header from "../src/components/header/Header";
 import Footer from "../src/components/footer/Footer";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
+import CookieBanner from "@/src/components/cookies/CookieBanner";
+import GoogleAnalytics from "@/src/components/GA/GoogleAnalitics";
 
-const CookieBanner = dynamic(
-    () => import("../src/components/cookies/CookieBanner"),
-    { ssr: false }
-);
+// const CookieBanner = dynamic(
+//     () => import("../src/components/cookies/CookieBanner"),
+//     { ssr: false }
+// );
 
-const GoogleAnalytics = dynamic(
-    () => import("../src/components/GA/GoogleAnalitics"),
-    {
-        ssr: false,
-    }
-);
+// const GoogleAnalytics = dynamic(
+//     () => import("../src/components/GA/GoogleAnalitics"),
+//     {
+//         ssr: false,
+//     }
+// );
 
 const inter = Inter({ subsets: ["latin"] });
 
