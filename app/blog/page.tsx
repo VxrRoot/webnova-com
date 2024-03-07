@@ -8,6 +8,8 @@ import { getPosts } from "@/lib/query";
 import { urlFor } from "@/lib/sanity";
 import blogImg from "public/images/single-blog-post.svg";
 
+export const revalidate = 30;
+
 export const metadata: Metadata = {
     title: "Webnova - blog",
     description:
