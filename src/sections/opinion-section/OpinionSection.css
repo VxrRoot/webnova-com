@@ -27,3 +27,9 @@
     background-color: var(--colorDetailsRed);
     width: 30px;
 }
+
+.opinion_wr svg {
+    fill: white;
+    width: 1.5rem;
+    height: auto;
+}
