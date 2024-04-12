@@ -12,8 +12,18 @@ export const revalidate = 30;
 
 export const metadata: Metadata = {
     title: "Webnova - blog",
+    robots: {
+        follow: true,
+        index: true,
+    },
     description:
         "Tworzymy dedykowane strony internetowe, które pomagają naszym klientom maksymalizować zyski oraz realizować cele w ich biznesach",
+    openGraph: {
+        title: "Webnova - blog",
+        description:
+            "Tworzymy dedykowane strony internetowe, które pomagają naszym klientom maksymalizować zyski oraz realizować cele w ich biznesach",
+        url: "https://www.web-nova.pl/blog",
+    },
     alternates: {
         canonical: `https://www.web-nova.pl/blog`,
     },
