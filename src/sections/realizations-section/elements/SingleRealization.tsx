@@ -18,7 +18,7 @@ const SingleRealization: FC<ISingleRealization> = ({
     link,
 }) => {
     return (
-        <div className="h-full w-full grid grid-cols-1  p-4 grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 gap-10 rounded-lg m-auto text-black hover:cursor-pointer lg:hover:scale-[101%] transition-all duration-300 bg-black/40">
+        <div className="h-full w-full grid grid-cols-1  p-4 grid-rows-1 lg:grid-rows-1 lg:grid-cols-2 gap-10 rounded-lg m-auto text-black hover:cursor-pointer lg:hover:scale-[101%] transition-all duration-300 bg-black/40">
             <div className="rounded-lg flex items-center justify-center px-4 lg:p-0 ">
                 <Image
                     src={img}
@@ -29,9 +29,9 @@ const SingleRealization: FC<ISingleRealization> = ({
             <div className="py-2 text-white flex flex-col border-detailsRed p-4">
                 <p className="font-bold text-2xl py-2">{title}</p>
                 <p className="text-md">{description}</p>
-                <span className="block mt-auto ml-auto">
+                <span className="block mt-auto ml-auto pt-10">
                     <Link
-                        className="py-2 px-4 border-white border-2 rounded-lg transition-all hover:border-detailsRed"
+                        className="py-2  px-4 border-white border-2 rounded-lg transition-all hover:border-detailsRed"
                         href={link}
                         target="_blank"
                     >
