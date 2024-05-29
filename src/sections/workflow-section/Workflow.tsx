@@ -3,7 +3,7 @@ import WorkflowItem from "./elements/WorkFlowItem";
 
 const Workflow = () => {
     return (
-        <div className="bg-backgroundDark relative">
+        <div className=" relative z-20">
             {workflowSteps.map((step, idx) => (
                 <WorkflowItem
                     key={idx}

@@ -10,7 +10,7 @@ interface IContactSection {
 const ContactSection: FC<IContactSection> = ({ padding }) => {
     return (
         <section
-            className={`flex flex-col items-center lg:flex-row w-full gap-10 my-8 ${
+            className={`relative z-20 flex flex-col items-center lg:flex-row w-full gap-10 my-8 ${
                 padding && "lg:p-11"
             }`}
         >

@@ -33,7 +33,7 @@ const Blog = async () => {
     const data: ISimplyBlogCard[] = await getPosts();
 
     return (
-        <main className="min-h-screen pt-32 mx-auto  flex flex-col px-4 items-center bg-backgroundHover">
+        <main className="min-h-screen pt-32 mx-auto  flex flex-col px-4 items-center bg-backgroundHover relative z-20">
             <div className="max-w-7xl mx-auto border-b">
                 <div className="flex flex-col lg:flex-row">
                     <h1 className="text-4xl mb-8 lg:mb-0 flex-1 font-bold">
@@ -82,7 +82,7 @@ const Blog = async () => {
                                     </div>
                                     <div className="flex items-center p-6 pt-0">
                                         <Link
-                                            href={`blog/${post.currentSlug}`}
+                                            href={`/blog/${post.currentSlug}`}
                                             className="underline"
                                         >
                                             Czytaj więcej

@@ -42,12 +42,12 @@ export default function WorkflowItem(item: IWorkflowItem) {
                     item.idx % 2 ? "order-2" : "lg:order-1 order-2"
                 }`}
             >
-                <h2 className="font-bold lg:leading-normal lg:text-5xl text-4xl text-start lg:text-start pb-10">
+                <h2 className="font-bold lg:text-5xl text-4xl text-start lg:text-start pb-10">
                     {item.title}
                 </h2>
                 <p
                     lang="pl"
-                    className={`text-lg tracking-wide text-left hyphnes lg:text-justify`}
+                    className={`text-lg tracking-wide text-left hyphnes`}
                 >
                     {item.desc}
                 </p>

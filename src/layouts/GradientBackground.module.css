@@ -8,19 +8,19 @@
 }
 
 .gradient {
-    --size: 250px;
-    --speed: 50s;
+    --size: 350px;
+    --speed: 25s;
     --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
     --colorDetailsRed: #b3001b;
-    --colorDetailsBlue: #255c99;
+    --colorDetailsBlue: #fbfff1;
     width: var(--size);
     height: var(--size);
     filter: blur(calc(var(--size) / 5));
     position: absolute;
     z-index: 9;
     background-image: linear-gradient(
-        var(--colorDetailsBlue),
-        var(--colorDetailsRed)
+        var(--colorDetailsRed),
+        var(--colorDetailsBlue)
     );
     animation: rotate var(--speed) var(--easing) alternate infinite;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
