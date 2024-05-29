@@ -2,10 +2,14 @@
 import Button from "@/src/components/buttons/animated-button/AnimatedButton";
 import { FC } from "react";
 
-const ButtonCTA: FC = () => {
+interface IButtonCTA {
+    text: string;
+}
+
+const ButtonCTA: FC<IButtonCTA> = ({ text }) => {
     return (
         <Button
-            value="Skontaktuj się z nami"
+            value={text}
             onClick={() =>
                 document.getElementById("contact_section")?.scrollIntoView()
             }

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const Contact = () => {
     return (
-        <main className="min-h-screen relative ">
+        <main className="min-h-screen relative z-20">
             <GradientBackgroundLayout>
                 <div className="pt-32 min-h-screen flex flex-col items-center mx-auto max-w-7xl padding-x">
                     <SectionHeadline text="Napisz do nas" />

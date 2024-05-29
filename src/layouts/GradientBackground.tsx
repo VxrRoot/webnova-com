@@ -13,7 +13,7 @@ const GradientBackgroundLayout: FC<IGradientBackgroundLayout> = ({
             className={`min-w-full h-full relative flex items-center justify-center overflow-hidden`}
         >
             <div className={styles.gradient} />
-            <div className="z-10 bg-black/50 w-full h-full">{children}</div>
+            <div className="z-10 bg-black/40 w-full h-full">{children}</div>
         </section>
     );
 };

@@ -4,7 +4,6 @@ import { FC, useState } from "react";
 import SocialIcons from "../social-icons/SocialIcons";
 
 const links = [
-    { name: "Strona Główna", href: "/" },
     { name: "Kontakt", href: "/kontakt" },
     { name: "Blog", href: "/blog" },
 ];
@@ -13,16 +12,16 @@ const Nav: FC = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="flex justify-end items-center w-full relative lg:justify-center">
+        <nav className="flex justify-end items-center w-full  relative lg:justify-center z-50">
             <div
                 className={`w-full justify-start pt-[20%] flex backdrop-blur-[8px] bg-black transition-opacity duration-500 fixed  ${
                     isOpen ? "top-0 opacity-100 " : "top-[-100vh] opacity-0"
-                } right-0 left-0 h-screen flex-col lg:opacity-100 lg:space-x-16 items-center space-y-14 lg:flex lg:flex-row lg:h-full lg:relative lg:top-auto lg:left-auto lg:right-auto lg:space-y-0 lg:py-0 lg:bg-inherit lg:justify-center lg:backdrop-filter-none lg:backdrop-blur-none`}
+                } right-0 left-0 h-screen flex-col lg:opacity-100 lg:space-x-8 items-center space-y-14 lg:flex lg:flex-row lg:h-full lg:relative lg:top-auto lg:left-auto lg:right-auto lg:space-y-0 lg:py-0 lg:bg-inherit lg:justify-center lg:backdrop-filter-none lg:backdrop-blur-none`}
             >
                 {links.map(({ name, href }, idx) => (
                     <Link href={href} legacyBehavior key={idx} scroll={true}>
                         <a
-                            className="text-gray-400 transition-all hover:text-white"
+                            className="text-gray-400 transition-all hover:text-white whitespace-nowrap"
                             onClick={() => setIsOpen((prev) => !prev)}
                         >
                             {name}

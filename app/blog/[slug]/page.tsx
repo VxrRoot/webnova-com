@@ -45,7 +45,7 @@ const BlogPostPage = async ({ params }: { params: { slug: string } }) => {
     }
 
     return (
-        <div className="bg-backgroundDark border-b">
+        <div className="bg-backgroundDark border-b relative z-20">
             <article className="h-full pt-40 pb-20 mx-auto max-w-7xl relative  lg:min-h-[500px] min-h-[300px] ">
                 <Link href="/blog" className="underline flex px-4">
                     Wróć
