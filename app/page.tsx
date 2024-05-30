@@ -61,6 +61,9 @@ export default function Home() {
             <div
                 className={`${styles.gradient} lg:none z-0 absolute top-[5700px] lg:top-[3600px] -left-2/3 lg:left-[300px]`}
             />
+            <div
+                className={`${styles.gradient} lg:none z-0 absolute top-[7900px] lg:top-[3600px] -left-1/4 lg:left-[300px]`}
+            />
         </main>
     );
 }

@@ -1,4 +1,9 @@
-User-Agent: *
+# *
+User-agent: *
 Allow: /
-Disallow: /private/
-Sitemap: https://web-nova.pl/sitemap.xml 
+
+# Host
+Host: https://www.web-nova.pl
+
+# Sitemaps
+Sitemap: https://www.web-nova.pl/sitemap.xml
