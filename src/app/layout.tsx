@@ -1,25 +1,14 @@
-import "./globals.css";
-import { Inter, DM_Sans } from "next/font/google";
-import Header from "../src/components/header/Header";
-import Footer from "../src/components/footer/Footer";
-import { Metadata } from "next";
-import dynamic from "next/dynamic";
 import CookieBanner from "@/src/components/cookies/CookieBanner";
 import GoogleAnalytics from "@/src/components/GA/GoogleAnalitics";
+import { Metadata } from "next";
+import { Inter, Montserrat } from "next/font/google";
 import { Suspense } from "react";
-// const CookieBanner = dynamic(
-//     () => import("../src/components/cookies/CookieBanner"),
-//     { ssr: false }
-// );
+import Footer from "../components/footer/Footer";
 
-// const GoogleAnalytics = dynamic(
-//     () => import("../src/components/GA/GoogleAnalitics"),
-//     {
-//         ssr: false,
-//     }
-// );
+import Header from "../components/header/Header";
+import "./globals.css";
 
-const sans = DM_Sans({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   icons: {
@@ -76,15 +65,9 @@ export default function RootLayout({
       <Suspense>
         <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID!} />
       </Suspense>
-      <body className={`relative ${sans.className}`}>
-        {/* <div id="stars"></div>
-                <div id="stars2"></div>
-                <div id="stars3"></div> */}
+      <body className={`${montserrat.className}`}>
         <Header />
-        <main className="z-20 relative">
-          {children}
-          <div className="z-10 bg-black/40 w-full h-full absolute left-0 top-0" />
-        </main>
+        <main className="z-20 relative bg-zinc-900">{children}</main>
         <Suspense>
           <CookieBanner />
         </Suspense>

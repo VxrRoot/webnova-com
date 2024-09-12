@@ -1,6 +1,5 @@
 import CTASection from "@/src/sections/CTA-section/CTASection";
 import { Metadata } from "next";
-import styles from "../../src/layouts/GradientBackground.module.css";
 
 export const metadata: Metadata = {
   title: "Google Ads - Skuteczna Reklama w Internecie",
@@ -131,9 +130,6 @@ const GoogleAdsPage = () => {
           <CTASection />
         </div>
       </div>
-      <div
-        className={`${styles.gradient} z-0 absolute top-[20px] right-1/5 lg:right-[100px]`}
-      />
     </main>
   );
 };
