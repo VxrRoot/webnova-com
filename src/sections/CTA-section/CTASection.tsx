@@ -1,34 +1,55 @@
+import FreeMeetButton from "@/src/components/free-meet-button/FreeMeetButton";
+import WebsiteRocketIcon from "@/src/components/icons/WebsiteRocketIcon";
+import Logo from "@/src/components/logo/dsLogo";
+import ContainerLayout from "@/src/layouts/ContainerLayout";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import React from "react";
-import styles from "../../layouts/GradientBackground.module.css";
+
+// const FreeMeetButton = dynamic(
+//   () => import("../../components/free-meet-button/FreeMeetButton"),
+//   {
+//     ssr: false,
+//   }
+// );
 
 const CTASection = () => {
-    return (
-        <section className="my-20 border-2 border-white rounded-xl relative overflow-hidden ">
-            <div className="flex py-10 items-center flex-col z-10 relative bg-black/50">
-                <h2 className="text-center text-3xl lg:text-4xl font-bold mb-6">
-                    Zamów darmową konsultację
-                </h2>
-                <p className="px-4 text-center max-w-[760px] text-md">
-                    Skorzystaj z naszej darmowej konsultacji, aby dowiedzieć
-                    się, jak możemy pomóc w realizacji Twojego projektu. Nasi
-                    eksperci odpowiedzą na wszystkie Twoje pytania i przedstawią
-                    najlepsze rozwiązania dostosowane do Twoich potrzeb
-                </p>
-                <Link
-                    className="mt-14 inline-block rounded-xl  p-0.5 bg-gradient-to-r shadow-lg bg-white focus:outline-0 focus:ring hover:animate-none hover:bg-detailsRed transition-all"
-                    href={"/kontakt"}
+  return (
+    <section className="py-20 overflow-hidden" id="kontakt">
+      <ContainerLayout>
+        <div className="bg-slate-300 rounded-3xl p-10 flex flex-col relative min-h-[500px]">
+          <div className="absolute z-10 top-0 left-1/2 -translate-x-1/2 opacity-10 h-full">
+            <WebsiteRocketIcon />
+          </div>
+          <div className="absolute lg:left-10 lg:top-10 top-4 left-4">
+            <Logo />
+          </div>
+          <div className="max-md:mt-10 flex justify-center flex-col  items-center gap-10 relative flex-1 h-full z-20">
+            <h3 className="text-zinc-900 lg:text-6xl text-3xl leading-tight font-semibold text-center">
+              Czas na Twoją idealną stronę
+              <br /> skontaktuj się!
+            </h3>
+            <div className="flex flex-col items-center justify-center-center mt-8">
+              <FreeMeetButton text="Wybierz termin" />
+              <div className="text-white mt-4 flex items-center">
+                <div className="w-4 h-4 rounded-full animate-pulse bg-green-600 mr-4" />
+                <span className="text-zinc-900">Dostępne miejsca</span>
+              </div>
+              <div className="flex flex-col items-center text-zinc-900 mt-4 gap-4">
+                <span>lub</span>
+                <a
+                  href="mailto:office.webnova@gmail.com"
+                  className="underline font-semibold"
                 >
-                    <span className="block whitespace-nowrap rounded-[11px] bg-backgroundDark px-4 py-2 text-lg text-white hover:bg-backgroundHover transition-all">
-                        Bezpłatna konsultacja
-                    </span>
-                </Link>
+                  Napisz wiadomość
+                </a>
+              </div>
             </div>
-            <div
-                className={`${styles.gradient} z-0 absolute top-[20px] left-1/5 lg:left-[100px]`}
-            />
-        </section>
-    );
+          </div>
+        </div>
+      </ContainerLayout>
+    </section>
+  );
 };
 
 export default CTASection;

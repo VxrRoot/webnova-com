@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.web-nova.pl
+
+# Sitemaps
+Sitemap: https://www.web-nova.pl/sitemap.xml
