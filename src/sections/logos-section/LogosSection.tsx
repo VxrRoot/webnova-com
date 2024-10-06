@@ -6,7 +6,6 @@ import logoRckart from "../../../public/logo-rckart.png";
 import pmjLogo from "../../../public/pmj-logo.webp";
 
 const LogosSection = () => {
-  console.log(styles.marquee_box_one);
   return (
     <section>
       <div
@@ -24,15 +23,33 @@ const LogosSection = () => {
               <Image alt="rckart" className="pt-4" src={pmjLogo} />
             </span>
             <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
-              <MikolajUlikowskiLogo />
+              <KwiatamiSzyteLogo />
             </span>
             <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
               <Image alt="tattooflow" className="pt-4" src={tattooflowLogo} />
             </span>
+            <span className="whitespace-nowrap h-full flex items-center pt-6 w-[200px] justify-center">
+              <DPLogo />
+            </span>
+            <span className="whitespace-nowrap h-full flex items-center pt-4 w-[200px] justify-center">
+              <Image alt="rckart" className="pt-4" src={logoRckart} />
+            </span>
+            <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
+              <AcdcLogo /> ACDC
+            </span>
+            <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
+              <MikolajUlikowskiLogo />
+            </span>
+            <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
+              <Image alt="rckart" className="pt-4" src={pmjLogo} />
+            </span>
             <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
               <KwiatamiSzyteLogo />
             </span>
-            <span className="whitespace-nowrap h-full pt-6 flex items-center  w-[200px] justify-center">
+            <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
+              <Image alt="tattooflow" className="pt-4" src={tattooflowLogo} />
+            </span>
+            <span className="whitespace-nowrap h-full flex items-center pt-6 w-[200px] justify-center">
               <DPLogo />
             </span>
             <span className="whitespace-nowrap h-full flex items-center pt-4 w-[200px] justify-center">
@@ -47,22 +64,40 @@ const LogosSection = () => {
               <MikolajUlikowskiLogo />
             </span>
             <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
+              <Image alt="rckart" className="pt-4" src={pmjLogo} />
+            </span>
+            <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
+              <KwiatamiSzyteLogo />
+            </span>
+            <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
+              <Image alt="tattooflow" className="pt-4" src={tattooflowLogo} />
+            </span>
+            <span className="whitespace-nowrap h-full flex items-center pt-6 w-[200px] justify-center">
+              <DPLogo />
+            </span>
+            <span className="whitespace-nowrap h-full flex items-center pt-4 w-[200px] justify-center">
+              <Image alt="rckart" className="pt-4" src={logoRckart} />
+            </span>
+            <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
               <AcdcLogo /> ACDC
             </span>
             <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
               <MikolajUlikowskiLogo />
             </span>
             <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
-              <AcdcLogo /> ACDC
+              <Image alt="rckart" className="pt-4" src={pmjLogo} />
             </span>
             <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
-              <MikolajUlikowskiLogo />
+              <KwiatamiSzyteLogo />
             </span>
             <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
-              <MikolajUlikowskiLogo />
+              <Image alt="tattooflow" className="pt-4" src={tattooflowLogo} />
             </span>
-            <span className="whitespace-nowrap h-full flex items-center pt-1 w-[200px] justify-center">
-              <MikolajUlikowskiLogo />
+            <span className="whitespace-nowrap h-full flex items-center pt-6 w-[200px] justify-center">
+              <DPLogo />
+            </span>
+            <span className="whitespace-nowrap h-full flex items-center pt-4 w-[200px] justify-center">
+              <Image alt="rckart" className="pt-4" src={logoRckart} />
             </span>
           </div>
         </div>
@@ -312,13 +347,13 @@ const AcdcLogo = () => (
       stroke-width="3"
     />
     <path
-      className="animate-spin origin-center"
+      className="origin-center"
       d="M223.156 136.625C223.653 184.124 186.229 222.979 139.623 223.466C93.0173 223.954 54.7888 185.889 54.2922 138.39C53.7956 90.8914 91.2199 52.0358 137.826 51.5485C184.431 51.0612 222.66 89.1259 223.156 136.625Z"
       stroke="url(#paint0_linear_258_56)"
       stroke-width="3"
     />
     <path
-      className="animate-spin origin-center "
+      className=" origin-center "
       d="M75.0644 210.151C34.7585 174.387 30.5999 113.325 65.6974 73.7708C100.795 34.2163 161.917 31.08 202.223 66.8442C242.529 102.608 246.688 163.67 211.59 203.224C176.493 242.779 115.37 245.915 75.0644 210.151Z"
       stroke="url(#paint1_linear_258_56)"
       stroke-width="3"

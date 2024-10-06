@@ -40,7 +40,7 @@ const AuroraBackground = ({
             after:content-[""] after:absolute after:inset-0 
             after:[background-image:var(--dark-gradient),var(--aurora)]
             after:[background-size:200%,_100%] 
-            after:animate-aurora after:[background-attachment:fixed] after:mix-blend-difference
+            xl:after:animate-aurora after:[background-attachment:fixed] after:mix-blend-difference
             pointer-events-none
             absolute -inset-[10px] opacity-50 will-change-transform`,
 
@@ -50,9 +50,9 @@ const AuroraBackground = ({
           ></div>
         </div>
 
-        <div className="relative z-20 xl:max-w-[72rem] 3xl:max-w-[90rem] flex flex-col items-center px-4 md:px-3 lg:px-4">
-          <h1 className="3xl:text-8xl xl:text-6xl text-4xl font-semibold text-center  text-white pt-28">
-            Tworzymy strony internetowe, które napędzają rozwój Twojej firmy.
+        <div className="relative z-20 xl:max-w-[60rem] 3xl:max-w-[90rem] flex flex-col items-center px-4 md:px-3 lg:px-4">
+          <h1 className="3xl:text-8xl !leading-tight xl:text-6xl text-4xl font-semibold text-center  text-white pt-28">
+            Skuteczne strony internetowe które zarabiają
           </h1>
           <h2 className="text-center lg:text-xl text-base font-light mt-10 text-white text-gray-200 xl:max-w-[70rem]">
             Oferujemy{" "}
@@ -63,7 +63,7 @@ const AuroraBackground = ({
             <strong>automatyzację procesów biznesowych</strong>
           </h2>
           <div className="flex flex-col items-center justify-center-center mt-8">
-            <FreeMeetButton />
+            <FreeMeetButton text="Bezpłatna konsultacja" />
             <div className="text-white mt-4 flex items-center">
               <div className="w-4 h-4 rounded-full animate-pulse bg-green-600 mr-4" />
               <span>Dostępne miejsca</span>

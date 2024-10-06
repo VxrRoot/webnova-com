@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import FreeMeetButton from "../free-meet-button/FreeMeetButton";
 import Logo from "../logo/dsLogo";
 
 function Nav() {
@@ -18,40 +19,41 @@ function Nav() {
   }, [isOpen]);
 
   return (
-    <nav className="w-full flex">
+    <nav className="w-full flex overflow-hidden">
       <div className="hidden lg:flex text-white w-full ">
-        <div className="flex-1 flex items-center justify-around">
-          <Link
+        <div className="flex-1 flex justify-center max-w-[200px] [&_svg]:w-20 [&_svg]:fill-white hover:[&_svg]:fill-slate-300 cursor-pointer ">
+          <Link href="/">
+            <Logo />
+          </Link>
+        </div>
+        <div className="flex-1 flex items-center justify-between max-w-[400px]">
+          {/* <Link
             href="#o-nas"
-            className="uppercase text-xl  cursor-pointer border-b border-transparent hover:border-white transition-all"
+            className=" text-xl font-semibold cursor-pointer border-b border-transparent hover:border-white transition-all"
           >
             O nas
-          </Link>
-          <Link
-            href="#nasz-zespol"
-            className="uppercase text-xl  cursor-pointer border-b border-transparent hover:border-white transition-all"
-          >
-            Nasz zespół
-          </Link>
-        </div>
-
-        <div className="flex-1 flex justify-center max-w-[200px] [&_svg]:transition-colors [&_svg]:fill-white hover:[&_svg]:fill-slate-300 cursor-pointer ">
-          <Logo />
-        </div>
-
-        <div className="flex-1 flex items-center justify-around">
+          </Link> */}
           <Link
             href="#uslugi"
-            className="uppercase text-xl  cursor-pointer border-b border-transparent hover:border-white transition-all"
+            className=" text-xl font-semibold cursor-pointer border-b border-transparent hover:border-white transition-all"
           >
             Usługi
           </Link>
           <Link
+            href="#faq"
+            className=" text-xl font-semibold  cursor-pointer border-b border-transparent hover:border-white transition-all"
+          >
+            FAQ
+          </Link>
+          <Link
             href="#kontakt"
-            className="uppercase text-xl  cursor-pointer border-b border-transparent hover:border-white transition-all"
+            className=" text-xl font-semibold cursor-pointer border-b border-transparent hover:border-white transition-all"
           >
             Kontakt
           </Link>
+        </div>
+        <div className="ml-auto flex items-center">
+          <FreeMeetButton text="Zacznij za darmo" />
         </div>
       </div>
       {/* Mobile menu */}
@@ -61,16 +63,28 @@ function Nav() {
         }`}
       >
         <div className="flex flex-col gap-20">
-          <Link href="#o-nas" className="uppercase text-xl  text-center">
+          {/* <Link href="#o-nas" className="uppercase text-xl  text-center">
             O nas
-          </Link>
-          <Link href="#nasz-zespol" className="uppercase text-xl  text-center">
-            Nasz zespół
-          </Link>
-          <Link href="#uslugi" className="uppercase text-xl  text-center">
+          </Link> */}
+          <Link
+            href="#uslugi"
+            className="uppercase text-xl  text-center"
+            onClick={() => setIsOpen(false)}
+          >
             Usługi
           </Link>
-          <Link href="#kontakt" className="uppercase text-xl  text-center">
+          <Link
+            href="#faq"
+            className="uppercase text-xl  text-center"
+            onClick={() => setIsOpen(false)}
+          >
+            FAQ
+          </Link>
+          <Link
+            href="#kontakt"
+            className="uppercase text-xl  text-center"
+            onClick={() => setIsOpen(false)}
+          >
             Kontakt
           </Link>
         </div>
@@ -80,7 +94,7 @@ function Nav() {
           <Image alt="" src={logo} className="-mt-4" />
         </div> */}
         <div
-          className={`w-44 py-4 transition-all ${
+          className={` py-4 transition-all ${
             isOpen ? "[&_svg]:fill-black" : "[&_svg]:fill-white"
           }`}
         >

@@ -4,9 +4,9 @@ import React from "react";
 
 const NoCompromisSection = () => {
   return (
-    <section className="my-40">
+    <section className="py-40" id="uslugi">
       <ContainerLayout>
-        <h2 className="text-center xl:max-w-6xl mx-auto text-3xl lg:text-5xl 3xl:text-6xl font-semibold">
+        <h2 className="text-center xl:max-w-6xl mx-auto text-4xl lg:text-5xl 3xl:text-6xl font-semibold">
           Koniec z kompromisami podczas tworzenia strony internetowej.
         </h2>
         <h3 className="text-center text-xl lg:text-2xl text-gray max-w-7xl mx-auto mt-12">
@@ -21,8 +21,8 @@ const NoCompromisSection = () => {
             </div>
             <p className="text-xl text-center font-light">
               Nieograniczone poprawki, pełna satysfakcja. Tworzymy stronę
-              dokładnie taką, jaką sobie wymarzyłeś. Dopracujemy każdy detal, aż
-              osiągniemy perfekcję.
+              dokładnie taką, która odpowiada na potrzeby Twoich klientów.
+              Dopracujemy każdy detal, aż osiągniemy perfekcję.
             </p>
           </div>
           <div className="flex flex-col items-center">

@@ -1,13 +1,15 @@
 import HeroSection from "@/src/sections/hero-section/HeroSection";
 import OpinionSection from "@/src/sections/opinion-section/OpinionSection";
 import RealizationsSection from "@/src/sections/realizations-section/RealizationsSection";
-import ServicesSection from "@/src/sections/services-section/ServicesSection";
 import Workflow from "@/src/sections/workflow-section/Workflow";
 import { Metadata } from "next";
+import CTASection from "../sections/CTA-section/CTASection";
 import LogosSection from "../sections/logos-section/LogosSection";
 import NoCompromisSection from "../sections/no-compromis-section/NoCompromisSection";
 import ParallaxRealizationsSection from "../sections/parallax-realizations-section/ParallaxRealizationsSection";
+import ProcessSection from "../sections/process-section/ProcessSection";
 import ResultsSection from "../sections/results-section/ResultsSection";
+import WhyUsSection from "../sections/why-us-section/WhyUsSection";
 
 export const metadata: Metadata = {
   title:
@@ -21,16 +23,18 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <main className="">
       <HeroSection />
       <LogosSection />
       <ParallaxRealizationsSection />
       <NoCompromisSection />
       <ResultsSection />
-      <ServicesSection />
+      <WhyUsSection />
+      <Workflow />
+      <ProcessSection />
       <RealizationsSection />
       <OpinionSection />
-      <Workflow />
+      <CTASection />
     </main>
   );
 }

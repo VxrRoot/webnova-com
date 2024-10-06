@@ -7,7 +7,7 @@ const ResultsSection = () => {
     <section className="py-40 bg-slate-300 text-black">
       <ContainerLayout>
         <div>
-          <h2 className="text-center xl:max-w-4xl mx-auto text-3xl lg:text-5xl 3xl:text-6xl font-semibold">
+          <h2 className="text-center xl:max-w-4xl mx-auto text-4xl lg:text-5xl 3xl:text-6xl font-semibold">
             Dzięki nam osiągniesz podobne wyniki
           </h2>
           <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

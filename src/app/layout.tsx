@@ -1,10 +1,6 @@
-import CookieBanner from "@/src/components/cookies/CookieBanner";
-import GoogleAnalytics from "@/src/components/GA/GoogleAnalitics";
 import { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
-import { Suspense } from "react";
+import { Montserrat } from "next/font/google";
 import Footer from "../components/footer/Footer";
-
 import Header from "../components/header/Header";
 import "./globals.css";
 
@@ -12,7 +8,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   icons: {
-    icon: "/favicons/favicon.ico",
+    icon: "/favicon.ico",
   },
   verification: {
     google: "",
@@ -62,15 +58,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl">
-      <Suspense>
-        <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID!} />
-      </Suspense>
-      <body className={`${montserrat.className}`}>
+      <body className={`${montserrat.className} `}>
         <Header />
+
         <main className="z-20 relative bg-zinc-900">{children}</main>
-        <Suspense>
-          <CookieBanner />
-        </Suspense>
         <Footer />
       </body>
     </html>

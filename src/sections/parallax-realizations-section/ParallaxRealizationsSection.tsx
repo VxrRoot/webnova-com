@@ -7,10 +7,21 @@ const cards = [
   { id: 2, url: "/images/harmoniaconsult.jpg" },
   { id: 3, url: "/images/rckart-case.webp" },
   { id: 4, url: "/images/mikolajulikowski.jpg" },
-  { id: 5, url: "/images/tattooflow.png" },
-  { id: 6, url: "/images/harmoniaconsult.jpg" },
-  { id: 7, url: "/images/rckart-case.webp" },
-  { id: 8, url: "/images/mikolajulikowski.jpg" },
+  { id: 5, url: "/images/acdc.png" },
+  { id: 6, url: "/images/dp.png" },
+  { id: 7, url: "/images/ks.png" },
+  { id: 8, url: "/images/pmj.png" },
+];
+
+const cards2 = [
+  { id: 3, url: "/images/rckart-case.webp" },
+  { id: 2, url: "/images/harmoniaconsult.jpg" },
+  { id: 1, url: "/images/tattooflow.png" },
+  { id: 5, url: "/images/acdc.png" },
+  { id: 4, url: "/images/mikolajulikowski.jpg" },
+  { id: 8, url: "/images/pmj.png" },
+  { id: 7, url: "/images/ks.png" },
+  { id: 6, url: "/images/dp.png" },
 ];
 
 const ParallaxRealizationsSection = () => {
@@ -47,7 +58,7 @@ const ParallaxRealizationsSection = () => {
           })}
         </motion.div>
         <motion.div style={{ x: y }} className="flex gap-4 mt-4">
-          {cards.map((card) => {
+          {cards2.map((card) => {
             return (
               <div
                 key={card.id}
